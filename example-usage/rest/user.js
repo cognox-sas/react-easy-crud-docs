@@ -1,3 +1,7 @@
+import draftToHtml from 'draftjs-to-html';
+import { draftToMarkdown, markdownToDraft } from 'markdown-draft-js';
+import htmlToDraft from 'html-to-draftjs';
+
 const user = {
   keyName: 'id',
   getList: {
@@ -39,6 +43,28 @@ const user = {
         { required: true, message: 'Is required!' },
         { type: 'email', message: 'Should be correct email!' },
       ],
+    },
+    {
+      title: 'Introduction Markdown',
+      key: 'introductionMd',
+      type: 'rich',
+      hidden: ['column'],
+      width: 20,
+      typeFormat: 'markdown',
+      convertToRaw: draftToMarkdown,
+      convertToDraft: markdownToDraft,
+      rules: [],
+    },
+    {
+      title: 'Introduction html',
+      key: 'introductionHtml',
+      type: 'rich',
+      hidden: ['column'],
+      width: 20,
+      typeFormat: 'html',
+      convertToRaw: draftToHtml,
+      convertToDraft: htmlToDraft,
+      rules: [],
     },
   ],
 };

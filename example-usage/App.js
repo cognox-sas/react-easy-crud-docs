@@ -31,8 +31,8 @@ const RootGraphQL = () => {
             ? `Updating: ${updatingKey}`
             : 'New'}
         </h2>
-        {(updatingKey !== null || updatingKey !== undefined) &&
-        formProps.loading === true ? (
+        {(updatingKey !== null && updatingKey !== undefined) &&
+        formProps.loadingForm === true ? (
           'Loading...'
         ) : (
           <Form {...formProps} onCancel={() => setUpdatingKey(null)} />
@@ -78,14 +78,14 @@ const RootRest = () => {
             ? `Updating: ${updatingKey}`
             : 'New'}
         </h2>
-        {(updatingKey !== null || updatingKey !== undefined) &&
-        formProps.loading === true ? (
+        {(updatingKey !== null && updatingKey !== undefined) &&
+        formProps.loadingForm === true ? (
           'Loading...'
         ) : (
           <Form {...formProps} onCancel={() => setUpdatingKey(null)} />
         )}
         <h2>List</h2>
-        {formProps.loading !== true && (
+        {listProps.loading !== true && (
           <List
             title={<h3>Countries</h3>}
             rowKey={userConfigRest.keyName}
@@ -107,6 +107,10 @@ const RootRest = () => {
               },
             ]}
             {...listProps}
+            onSubmit={values => {
+              console.log('VALUES: ', values);
+              listProps.onSubmit(values);
+            }}
           />
         )}
       </Content>
