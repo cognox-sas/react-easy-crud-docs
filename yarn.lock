@@ -3472,6 +3472,34 @@ dotenv@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.0.0.tgz#ed310c165b4e8a97bb745b0a9d99c31bda566440"
 
+draft-js-export-markdown@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/draft-js-export-markdown/-/draft-js-export-markdown-1.3.3.tgz#fcdfdd408b6d380ff9cc788aecf4ef352c0efae3"
+  integrity sha512-sp3zJQMSnQ97eAZXWjbFSDifgZAVNM5KTiTRldNNel9/K1IzKyMfAaMoxsIEL0fXTxDwfpFSaE7dKAwkdROayA==
+  dependencies:
+    draft-js-utils "^1.3.3"
+
+draft-js-import-element@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/draft-js-import-element/-/draft-js-import-element-1.3.3.tgz#e4b5e87f72bc57adb459d786a3d0d58b498b2fa1"
+  integrity sha512-E1hiuWuhM9XmX5QFBzKY0blkuPxz+yuK88R1y/xIfLgJtVyfQOnc8vfkGH6tEPbNtdbIcnKI8aCGfCkqgvt5CA==
+  dependencies:
+    draft-js-utils "^1.3.3"
+    synthetic-dom "^1.3.3"
+
+draft-js-import-markdown@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/draft-js-import-markdown/-/draft-js-import-markdown-1.3.3.tgz#cc5e703dc31888757743e94a4eafd25bf012f9ab"
+  integrity sha512-O9wQPAVB4TQLZGPYUQDHD1XGK/H7DZKNrSuwDn7RTadWWFycZV4sP46TZPFD4D240xas/h9QwjbxfAg8ZLQwrw==
+  dependencies:
+    draft-js-import-element "^1.3.3"
+    synthetic-dom "^1.3.3"
+
+draft-js-utils@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/draft-js-utils/-/draft-js-utils-1.3.3.tgz#2330ab98218c835d58dc08eacdba6708b201eb27"
+  integrity sha512-ZIF3KE2+dRD6zEoqQyu9HzeG56NWtktfazRnDZFC9GD4NnHgJE5qI+TqGgmjRjSrKzuSQonl5rsx+D4N5m6yhQ==
+
 draft-js@^0.10.0, draft-js@~0.10.0:
   version "0.10.5"
   resolved "https://registry.yarnpkg.com/draft-js/-/draft-js-0.10.5.tgz#bfa9beb018fe0533dbb08d6675c371a6b08fa742"
@@ -7749,12 +7777,11 @@ react-draft-wysiwyg@^1.13.2:
     linkify-it "^2.0.3"
     prop-types "^15.6.0"
 
-react-easy-crud@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/react-easy-crud/-/react-easy-crud-0.2.2.tgz#c43949db930bfc8d91112d9c5997cfd47c3d171f"
-  integrity sha512-jrEi63y9OXBtbbFtf0cQgxKOcrJv/z+yIjubBDDwrjq5+IU004pFfnRyr1W3ZOiF0sg9xRm8XOmY0zfiuPq0QQ==
+react-easy-crud@^0.2.4:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/react-easy-crud/-/react-easy-crud-0.2.4.tgz#cbd49ef98aa6c35259f3429206748931d5e84647"
+  integrity sha512-gTy2EcbQRbPodz8QzLn0K1AP5uB2koAd/yoEQTzajOjxDiimKvwy5WRMN/btG8iQVMWnTP1hf8OnR5jt5yqCGw==
   dependencies:
-    draftjs-to-html "^0.8.4"
     react-draft-wysiwyg "^1.13.2"
 
 react-error-overlay@^5.1.6:
@@ -9047,6 +9074,11 @@ swap-case@^1.1.0:
 symbol-observable@^1.0.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+
+synthetic-dom@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/synthetic-dom/-/synthetic-dom-1.3.3.tgz#a01865fef513c76c6936f968f90140eb6959a034"
+  integrity sha512-ILjWWiiHIAYphm+F3w0V+A4a79HHF3ELZc6v7H3/kVzCvoxqHWTySN10M7vUOMpZFeRkwz/LmXsW10eFu79bdQ==
 
 tapable@^1.0.0, tapable@^1.1.0:
   version "1.1.3"

@@ -1,6 +1,9 @@
 import draftToHtml from 'draftjs-to-html';
-import { draftToMarkdown, markdownToDraft } from 'markdown-draft-js';
 import htmlToDraft from 'html-to-draftjs';
+// import { draftToMarkdown, markdownToDraft } from 'markdown-draft-js';
+
+import { stateToMarkdown as draftToMarkdown } from 'draft-js-export-markdown';
+import { stateFromMarkdown as markdownToDraft } from 'draft-js-import-markdown';
 
 const user = {
   keyName: 'id',
@@ -62,8 +65,8 @@ const user = {
       hidden: ['column'],
       width: 20,
       typeFormat: 'html',
-      convertToRaw: draftToHtml,
-      convertToDraft: htmlToDraft,
+      convertToRaw: (rich, draftRaw) => draftToHtml(draftRaw(rich)),
+      convertToDraft: (raw) => htmlToDraft(raw),
       rules: [],
     },
   ],
